@@ -34,3 +34,9 @@ class Solution(object):
             max_val = max(max_val, arrays[i][-1])
         
         return max_distance
+
+# Example usage:
+arrays = [[1, 2, 3], [4, 5], [1, 2, 3]]
+solution = Solution()
+output = solution.maxDistance(arrays)
+print("The maximum distance is:", output)
