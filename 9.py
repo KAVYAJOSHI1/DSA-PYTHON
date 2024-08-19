@@ -11,7 +11,7 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        # Start with the total operations count as 0
+        # Initialize the total number of operations to 0
         operations = 0
         
         # Start with the smallest factor (2) and work upwards
@@ -23,3 +23,15 @@ class Solution(object):
             factor += 1
         
         return operations
+
+# Example usage:
+solution = Solution()
+
+# Test case 1: n = 3
+print("Minimum operations to get 3 'A's:", solution.minSteps(3))  # Output: 3
+
+# Test case 2: n = 1
+print("Minimum operations to get 1 'A':", solution.minSteps(1))  # Output: 0
+
+# Test case 3: n = 4
+print("Minimum operations to get 4 'A's:", solution.minSteps(4))  # Output: 4
