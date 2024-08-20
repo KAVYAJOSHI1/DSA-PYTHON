@@ -49,3 +49,18 @@ class Solution(object):
             return maxStones
         
         return helper(0, 1)
+
+def main():
+    # Example 1
+    piles1 = [2, 7, 9, 4, 4]
+    solution = Solution()
+    result1 = solution.stoneGameII(piles1)
+    print(f"Maximum stones Alice can get for piles {piles1}: {result1}")
+    
+    # Example 2
+    piles2 = [1, 2, 3, 4, 5, 100]
+    result2 = solution.stoneGameII(piles2)
+    print(f"Maximum stones Alice can get for piles {piles2}: {result2}")
+
+if __name__ == "__main__":
+    main()
