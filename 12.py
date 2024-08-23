@@ -27,7 +27,7 @@ class Solution(object):
         # Calculate the bit length of the number
         bit_length = num.bit_length()
         
-        # Create a bitmask of the same length as the number, filled with 1's
+        # Create a bitmask of the same length as the number, filled with 1's13
         bitmask = (1 << bit_length) - 1
         
         # XOR the number with the bitmask to get the complement
